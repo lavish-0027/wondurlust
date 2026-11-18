@@ -1,0 +1,517 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F8F9FA;
+}
+
+header {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #F8F9FA;
+}
+
+.Logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+    color: #023E8A;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.top li a {
+    text-decoration: none;
+    color: #495057;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+.top li a.first {
+    color: #0077B6;
+    border-bottom: 2px solid #0077B6;
+}
+
+.Book {
+    color: white;
+    background-color: #0077B6;
+    border: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.Hero {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.20) 65%,
+            rgba(255, 255, 255, 0.95) 100%
+        ),
+        url('./Assets/Image.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.Main {
+    width: 100%;
+    max-width: 896px;
+    text-align: center;
+}
+
+.Main .Heading {
+    margin-bottom: 24px;
+}
+
+.Main .Heading .Heading1 {
+    font-size: clamp(30px, 5vw, 56px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1.12px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.Main .Marg {
+    margin-bottom: 40px;
+}
+
+.Main .Marg .Shadow {
+    max-width: 672px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+}
+
+.Book-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 16px 32px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Book-btn:hover {
+    background-color: #005F91;
+    transform: translateY(-3px);
+}
+
+.Book-btn .icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.Book-btn .icon img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.Destination {
+    width: 100%;
+    background-color: #F8F9FA;
+    padding: 40px 20px;
+}
+
+.Featured {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Featured h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #023E8A;
+    margin-bottom: 10px;
+}
+
+.Featured p {
+    font-size: 15px;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.Destinations {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.Destination-card {
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.Card-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.Card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.Price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #EBC66F;
+    color: #664400;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.Card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Card-content h2 {
+    color: #0077B6;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.Card-content p {
+    color: #495057;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.Card-content button {
+    width: 100%;
+    padding: 11px;
+    background-color: #EBC66F;
+    color: #664400;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: auto;
+    transition: 0.3s;
+}
+
+.Card-content button:hover {
+    background-color: #DDB453;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 65px;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .Logo {
+        font-size: 19px;
+    }
+
+    .top {
+        gap: 12px;
+    }
+
+    .top li a {
+        font-size: 11px;
+    }
+
+    .Book {
+        font-size: 10px;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+    .Hero {
+        min-height: calc(100vh - 65px);
+        padding: 40px 20px;
+        background-position: center;
+    }
+
+    .Main .Heading {
+        margin-bottom: 20px;
+    }
+
+    .Main .Heading .Heading1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .Main .Marg {
+        margin-bottom: 30px;
+    }
+
+    .Main .Marg .Shadow {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .Book-btn {
+        padding: 13px 25px;
+        font-size: 14px;
+    }
+
+    .Destination {
+        padding: 25px 12px;
+    }
+
+    .Featured {
+        margin-bottom: 30px;
+    }
+
+    .Featured h2 {
+        font-size: 20px;
+    }
+
+    .Featured p {
+        font-size: 13px;
+    }
+
+    .Destinations {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .Card-image {
+        height: 150px;
+    }
+
+    .Card-content {
+        padding: 12px;
+    }
+
+    .Card-content h2 {
+        font-size: 18px;
+    }
+
+    .Card-content p {
+        font-size: 13px;
+    }
+
+    .Price {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .Card-content button {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+.About {
+    width: 100%;
+    min-height: 400px;
+    background-color: #F1F2F4;
+    border-bottom: 3px solid #FFC107;
+    padding: 55px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.About h2 {
+    color: #023E8A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.About-content {
+    width: 100%;
+    max-width: 650px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.About-content p {
+    color: #495057;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.Footer {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #0077B6;
+    padding: 30px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer-logo {
+    color: #3468A8;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.Footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.Footer-links a {
+    color: #495057;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Footer-links a:hover {
+    color: #0077B6;
+}
+
+.Footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.Footer-bottom p {
+    color: #495057;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.Back-to-top {
+    background: transparent;
+    border: none;
+    color: #0077B6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.Back-to-top:hover {
+    color: #023E8A;
+}
+
+@media (max-width: 600px) {
+
+    .About {
+        min-height: 360px;
+        padding: 50px 12px;
+    }
+
+    .About h2 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .About-content {
+        padding: 18px 15px;
+        border-radius: 12px;
+    }
+
+    .About-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .Footer {
+        padding: 25px 10px 12px;
+    }
+
+    .Footer-logo {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .Footer-links {
+        gap: 18px;
+        margin-bottom: 12px;
+    }
+
+    .Footer-links a {
+        font-size: 11px;
+    }
+
+    .Footer-bottom {
+        align-items: flex-end;
+        gap: 8px;
+    }
+
+    .Footer-bottom p {
+        font-size: 10px;
+        max-width: 70%;
+    }
+
+    .Back-to-top {
+        font-size: 10px;
+    }
+}
